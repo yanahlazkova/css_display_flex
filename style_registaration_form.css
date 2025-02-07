@@ -5,6 +5,8 @@
 
 body {
     margin: 0;
+    background-color: lightgray;
+
 }
 
 div.flex-center {
@@ -17,9 +19,8 @@ div.flex-center {
 }
 
 .registration, .checkbox {
-    margin: 20px;
+    /* margin: 20px; */
     padding: 20px;
-    background-color: lightgray;
     border-radius: 5px;
 }
 
@@ -54,20 +55,25 @@ input[type=checkbox] {
     margin: 10px;
 }
 
-.form {
-    display: ;
-    width: 50%;
+.registration {
     float: left;
+    width: 50%;
 }
 
-form::after {
+.row::after {
     content: "";
     display: table;
     clear: both;
 }
 
 @media screen and (max-width: 600px) {
-    .form {
+    .registration {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .form {
+        width: 900px;
     }
 }
