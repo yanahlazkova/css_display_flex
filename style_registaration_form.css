@@ -57,7 +57,7 @@ input[type=checkbox] {
 
 .registration {
     float: left;
-    width: 50%;
+    width: 100%;
 }
 
 .row::after {
@@ -66,14 +66,14 @@ input[type=checkbox] {
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 900px) {
     .registration {
-        width: 100%;
+        width: 50%;
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 600px) {
     .form {
-        width: 900px;
+        width: 600px;
     }
 }
